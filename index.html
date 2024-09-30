@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B10A5-DOM-Quest-Build-and-Manipulate</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-10">
+    <nav class="bg-orange-50 text-black p-4 sticky top-0 z-50">
+       <div class="">
+         <!-- nav part 1 -->
+
+         <div class="navbar bg-base-50">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <!-- button -->
+                <button class="btn bg-[#B4F461] " id="goToBlogBtn">Blog</button>
+              </div>
+            </div>
+            <!-- middle -->
+            <div class="navbar-center">
+              <div class="flex items-center">
+                <img src="assets/logo.png">
+                <h2 class="text-xl font-medium p-3">Donate Bangladesh</h2>
+              </div>
+            </div>
+            <!-- last -->
+            <div class="navbar-end flex">
+              <img src="assets/coin.png">
+              <div class="flex">
+                <h3 id="account-balance">5500</h3>
+                <h3>BDT</h3>
+              </div> 
+            </div>
+          </div>
+       </div>
+       <!-- bannar -->
+        <div class="flex justify-center gap-5 my-5">
+            <button class="btn" id="donation-button">Donation</button>
+            <button class="btn" id="history-button">History</button>
+        </div>
+    </nav>
+<!-- now main part -->
+ <main>
+    <!-- Donation page -->
+     <div class="" id="donation-section">
+        <!-- part 1 -->
+        <div>
+            <div class="hero bg-base-200 my-5">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="assets/noakhali.png"
+                    class="max-w-sm rounded-lg shadow-2xl" />
+                  <div>
+                                 <div class="stats shadow ">
+                                    <div class="stat flex items-center">
+                                    <img src="assets/coin.png"/>
+                                    <div class="stat-value text-sm" id="noakhali-balance">0</div>
+                                    <div class="stat-value text-sm">BDT</div>
+                                    </div>
+                                  </div>
+                    <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="py-6 text-sm">
+                        The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                    </p>
+                    <input type="text" placeholder="Write Donation Amount" class="my-3 px-10 py-1" id="input-add-money-one">
+                    <br>
+                    <button class="btn bg-[#B4F461]" id="donation-money-noakhali">Get Started</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- part-2 -->
+        <div>
+            <div class="hero bg-base-200 my-5">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="assets/feni.png"
+                    class="max-w-sm rounded-lg shadow-2xl" />
+                  <div>
+                    <div class="stats shadow ">
+                        <div class="stat flex items-center">
+                        <img src="assets/coin.png"/>
+                        <div class="stat-value text-sm" id="feni-balace">600</div>
+                        <div class="stat-value text-sm">BDT</div>
+                        </div>
+                      </div>
+                    <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                    <p class="py-6 text-sm">
+                        The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+                    </p>
+                    <input id="input-add-money-two" type="text" placeholder="Write Donation Amount" class="my-3 px-10 py-1">
+                    <br>
+                    <button class="btn bg-[#B4F461]" id="relief-in-feni">Get Started</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- part-3 -->
+        <div>
+            <div class="hero bg-base-200 my-5">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img src="assets/quota-protest.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div class="p-3">
+                    <div class="stats shadow ">
+                        <div class="stat flex items-center">
+                        <img src="assets/coin.png"/>
+                        <div class="stat-value text-sm" id="quota-balance">2400</div>
+                        <div class="stat-value text-sm">BDT</div>
+                        </div>
+                      </div>
+                    <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
+                    <p class="py-6 text-sm">
+                        The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                    </p>
+                    <input id="input-add-money-three" type="text" placeholder="Write Donation Amount" class="my-3 px-10 py-1 ">
+                    <br>
+                    <button id="quota-movment" class="btn bg-[#B4F461]">Get Started</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- part 4 -->
+        div>
+        <div class="hero bg-base-200 my-5">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="assets/rangpur.jpeg" class="max-w-sm rounded-lg shadow-2xl" />
+              <div class="p-3">
+                <div class="stats shadow ">
+                    <div class="stat flex items-center">
+                    <img src="assets/coin.png"/>
+                    <div class="stat-value text-sm" id="rangpur-flood-balance">2400</div>
+                    <div class="stat-value text-sm">BDT</div>
+                    </div>
+                  </div>
+                <h1 class="text-2xl font-bold">Donate for Flood at Rangpur, Bangladesh</h1>
+                <p class="py-6 text-sm">
+                    The recent floods in Rangpur have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                </p>
+                <input id="input-add-money-four" type="text" placeholder="Write Donation Amount" class="my-3 px-10 py-1 ">
+                <br>
+                <button id="flood-rangpur" class="btn bg-[#B4F461]">Get Started</button>
+              </div>
+            </div>
+          </div>
+    </div>
+     
+    <div class="hidden border-solid border-2 border-inherit rounded-sm p-5" id="transaction-section">
+<h1></h1>
+    </div>
+ </main>
+
+<script src="js/blog.js"></script>
+<script src="js/utilities.js"></script>
+<script src="js/donationmoney.js"></script>
+
+</body>
+</html>

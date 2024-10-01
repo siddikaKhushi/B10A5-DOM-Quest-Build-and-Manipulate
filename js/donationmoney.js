@@ -10,6 +10,7 @@ document.getElementById('donation-money-noakhali')
    
     if (isNaN(addMoney1) || addMoney1 <= 0) {
         alert('Please enter a valid donation amount');
+        // document.getElementById('donation-section').classList.add('hidden');
         return;
     }
     

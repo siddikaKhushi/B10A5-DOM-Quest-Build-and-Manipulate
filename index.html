@@ -8,7 +8,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="m-10">
-    <nav class="bg-orange-50 text-black p-4 sticky top-0 z-50">
+    <nav class="sticky top-0 z-50 backdrop-blur-lg bg-white/70 shadow-lg text-black">
        <div class="">
          <!-- nav part 1 -->
 
@@ -67,7 +67,23 @@
                     </p>
                     <input type="text" placeholder="Write Donation Amount" class="my-3 px-10 py-1" id="input-add-money-one">
                     <br>
-                    <button class="btn bg-[#B4F461]" id="donation-money-noakhali">Get Started</button>
+                    <!-- Open the modal using ID.showModal() method -->
+<button class="btn bg-[#B4F461]" onclick="my_modal_1.showModal()" id="donation-money-noakhali">Get Started</button>
+<dialog id="my_modal_1" class="modal text-center">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Congrates!</h3>
+  <div class="flex justify-center"> <img src="assets/coin.png" class=""/></div>
+    <p class="py-4">You Have Donated for Humankind</p>
+    <h3 class="font-bold">Successfully</h3>
+    <div class="modal-action">
+      <form method="dialog" class="flex justify-center">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close Confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+                    <!-- <button class="btn bg-[#B4F461]" id="donation-money-noakhali">Get Started</button> -->
                   </div>
                 </div>
               </div>
@@ -93,7 +109,21 @@
                     </p>
                     <input id="input-add-money-two" type="text" placeholder="Write Donation Amount" class="my-3 px-10 py-1">
                     <br>
-                    <button class="btn bg-[#B4F461]" id="relief-in-feni">Get Started</button>
+                    <button class="btn bg-[#B4F461]" onclick="my_modal_1.showModal()" id="relief-in-feni">Get Started</button>
+                    <!-- <dialog id="my_modal_1" class="modal text-center">
+                      <div class="modal-box">
+                        <h3 class="text-lg font-bold">Congrates!</h3>
+                      <div class="flex justify-center"> <img src="assets/coin.png" class=""/></div>
+                        <p class="py-4">You Have Donated for Humankind</p>
+                        <h3 class="font-bold">Successfully</h3>
+                        <div class="modal-action">
+                          <form method="dialog" class="flex justify-center">
+                            <button class="btn">Close Confirmation</button>
+                          </form>
+                        </div>
+                      </div>
+                    </dialog> -->
+                    <!-- <button class="btn bg-[#B4F461]" id="relief-in-feni">Get Started</button> -->
                   </div>
                 </div>
               </div>
@@ -117,13 +147,27 @@
                     </p>
                     <input id="input-add-money-three" type="text" placeholder="Write Donation Amount" class="my-3 px-10 py-1 ">
                     <br>
-                    <button id="quota-movment" class="btn bg-[#B4F461]">Get Started</button>
+                    <button class="btn bg-[#B4F461]" onclick="my_modal_1.showModal()" id="quota-movment">Get Started</button>
+                    <!-- <dialog id="my_modal_1" class="modal text-center">
+                      <div class="modal-box">
+                        <h3 class="text-lg font-bold">Congrates!</h3>
+                      <div class="flex justify-center"> <img src="assets/coin.png" class=""/></div>
+                        <p class="py-4">You Have Donated for Humankind</p>
+                        <h3 class="font-bold">Successfully</h3>
+                        <div class="modal-action">
+                          <form method="dialog" class="flex justify-center">
+                            <button class="btn">Close Confirmation</button>
+                          </form>
+                        </div>
+                      </div>
+                    </dialog> -->
+                    <!-- <button id="quota-movment" class="btn bg-[#B4F461]">Get Started</button> -->
                   </div>
                 </div>
               </div>
         </div>
         <!-- part 4 -->
-        div>
+
         <div class="hero bg-base-200 my-5">
             <div class="hero-content flex-col lg:flex-row">
               <img src="assets/rangpur.jpeg" class="max-w-sm rounded-lg shadow-2xl" />
@@ -141,7 +185,21 @@
                 </p>
                 <input id="input-add-money-four" type="text" placeholder="Write Donation Amount" class="my-3 px-10 py-1 ">
                 <br>
-                <button id="flood-rangpur" class="btn bg-[#B4F461]">Get Started</button>
+                <button class="btn bg-[#B4F461]" onclick="my_modal_1.showModal()" id="flood-rangpur">Get Started</button>
+                    <!-- <dialog id="my_modal_1" class="modal text-center">
+                      <div class="modal-box">
+                        <h3 class="text-lg font-bold">Congrates!</h3>
+                      <div class="flex justify-center"> <img src="assets/coin.png" class=""/></div>
+                        <p class="py-4">You Have Donated for Humankind</p>
+                        <h3 class="font-bold">Successfully</h3>
+                        <div class="modal-action">
+                          <form method="dialog" class="flex justify-center">
+                            <button class="btn">Close Confirmation</button> 
+                           </form>
+                        </div>
+                      </div>
+                    </dialog> -->
+                <!-- <button id="flood-rangpur" class="btn bg-[#B4F461]">Get Started</button>  -->
               </div>
             </div>
           </div>

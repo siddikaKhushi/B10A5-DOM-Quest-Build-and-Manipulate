@@ -16,10 +16,10 @@ function showNewPageById(id){
 
     document.getElementById(id).classList.remove('hidden');
 }
-function showCurrentDateTime() {
-    const now = new Date();
-    const dateTimeString = `Date: ${now}`;
-    
-    // Display the current date and time in the element with id="dateTime"
-    document.getElementById('dateTime').textContent = dateTimeString;
-  }
+function addTransactionHistory(message) {
+    const p = document.createElement('p');
+    const currentDate = new Date(); 
+    p.innerText = `${message} 
+     Date: ${currentDate.toString()}`;
+    document.getElementById('transaction-section').appendChild(p);
+}

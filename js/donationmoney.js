@@ -28,9 +28,10 @@ document.getElementById('donation-money-noakhali')
 
 
         // for transaction history
-    
-        p.innerText = `${accountNewBalance1} Taka is Donated for famine-2024 at Feni, Bangladesh`;
-        document.getElementById('transaction-section').appendChild(p);
+        addTransactionHistory(`${addMoney1} Taka is Donated for Flood Relief in Noakhali, Bangladesh`);
+        // const p = document.createElement('p');
+        // p.innerText = `${addMoney1} Taka is Donated for Flood at Noakhali, Bangladesh`;
+        // document.getElementById('transaction-section').appendChild(p);
     } else {
         alert('Insufficient balance');
     }
@@ -59,9 +60,10 @@ document.getElementById('relief-in-feni')
         document.getElementById('account-balance').innerText = balance;
         document.getElementById('feni-balace').innerText = accountNewBalance2;
         // for transaction history
-    
-        p.innerText = `${accountNewBalance2} Taka is Donated for Flood Relief in Feni,Bangladesh`;
-        document.getElementById('transaction-section').appendChild(p);
+        addTransactionHistory(`${addMoney2} Taka is Donated for Flood Relief in Noakhali, Bangladesh`);
+        // const p = document.createElement('p');
+        // p.innerText = `${addMoney2} Taka is Donated for Flood Relief in Feni, Bangladesh`;
+        // document.getElementById('transaction-section').appendChild(p);
     } else {
         alert('Insufficient balance');
     }
@@ -92,9 +94,10 @@ document.getElementById('quota-movment')
         document.getElementById('quota-balance').innerText = accountNewBalance3;
 
         // for transaction history
-    
-        p.innerText = `${accountNewBalance3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
-        document.getElementById('transaction-section').appendChild(p);
+        addTransactionHistory(`${addMoney3} Taka is Donated for Flood Relief in Noakhali, Bangladesh`);
+        // const p = document.createElement('p');
+        // p.innerText = `${addMoney3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
+        // document.getElementById('transaction-section').appendChild(p);
     } else {
         alert('Insufficient balance');
     }
@@ -125,9 +128,10 @@ document.getElementById('flood-rangpur')
         document.getElementById('rangpur-flood-balance').innerText = accountNewBalance4;
 
         // for transaction history
-    
-        p.innerText = `${accountNewBalance4} Taka is Donated for famine-2024 at Rangpur, Bangladesh`;
-        document.getElementById('transaction-section').appendChild(p);
+        addTransactionHistory(`${addMoney4} Taka is Donated for Flood Relief in Noakhali, Bangladesh`);
+        // const p = document.createElement('p');
+        // p.innerText = `${addMoney4} Taka is Donated for Flood at Rangpur, Bangladesh`;
+        // document.getElementById('transaction-section').appendChild(p);
     } else {
         alert('Insufficient balance');
     }
